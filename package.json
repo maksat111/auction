@@ -1,6 +1,5 @@
 {
   "name": "home_page",
-  "homepage": "https://maksat111.github.io/auction",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
