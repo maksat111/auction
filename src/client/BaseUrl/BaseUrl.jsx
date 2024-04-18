@@ -13,12 +13,17 @@ const BaseUrl = () => {
     window.location.href = "/home";
   };
 
+  const handleSkipClick = () => {
+    localStorage.setItem("url", value);
+  };
+
   return (
     <div className="base-container">
       <div className="input-container">
         <input type="text" value={value} onChange={handleChange} />
       </div>
       <button onClick={handleClick}>Submit</button>
+      <button onClick={handleSkipClick}>Skip</button>
     </div>
   );
 };

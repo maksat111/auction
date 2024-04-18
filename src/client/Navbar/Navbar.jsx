@@ -22,23 +22,23 @@ const Navbar = () => {
               aria-current="page"
               to="/home"
             >
-              Home
+              Baş sahypa
             </NavLink>
           </li>
 
           <li className="dropdown nav-item px-3 mx-auto licls">
             <NavLink to="#" className="nav-link">
-              <span id="headrdr">Lots</span>{" "}
+              <span id="headrdr">Harytlar</span>{" "}
             </NavLink>
             <ul className="ddlist">
               <li>
                 <NavLink to="/addlot" excat className="nav-link">
-                  Add Lot
+                  Haryt döretmek
                 </NavLink>
               </li>
               <li>
                 <NavLink to="/updatelot" excat className="nav-link">
-                  My Lots
+                  Meniň harytlarym
                 </NavLink>
               </li>
             </ul>
@@ -51,7 +51,7 @@ const Navbar = () => {
               className="nav-link"
               to="/lot"
             >
-              Bid & Buy
+              Teklip etmek
             </NavLink>
           </li>
 
@@ -62,7 +62,7 @@ const Navbar = () => {
               className="nav-link"
               to="/about"
             >
-              About
+              Programma barada
             </NavLink>
           </li>
           {/* 
@@ -70,22 +70,15 @@ const Navbar = () => {
           <NavLink activeClassName = 'menu_active' excat className="nav-link" to="/service">Services</NavLink>
         </li> */}
 
-          <li className="dropdown nav-item px-3 mx-auto licls">
-            <NavLink to="#" className="nav-link">
-              <span id="headrdr">Services</span>{" "}
+          <li className="nav-item px-3 mx-auto licls">
+            <NavLink
+              activeClassName="menu_active"
+              excat
+              className="nav-link"
+              to="/service"
+            >
+              Hyzmatlarymyz
             </NavLink>
-            <ul className="ddlist">
-              <li className="nav-item px-3 mx-auto licls ">
-                <NavLink excat className="nav-link" to="/service">
-                  Our Services
-                </NavLink>
-              </li>
-              <li className="nav-item px-3 mx-auto licls">
-                <NavLink excat className="nav-link fdbck" to="/feedback">
-                  Feedback
-                </NavLink>
-              </li>
-            </ul>
           </li>
 
           <li className="nav-item px-3 mx-auto licls">
@@ -95,7 +88,7 @@ const Navbar = () => {
               className="nav-link"
               to="/contact"
             >
-              Contact Us
+              Habarlaşmak
             </NavLink>
           </li>
 
@@ -118,23 +111,23 @@ const Navbar = () => {
               className="nav-link"
               to="/bidstatus"
             >
-              Bid Status
+              Tekliplerim
             </NavLink>
           </li>
 
           <li className="dropdown nav-item px-3 mx-auto licls">
             <NavLink to="#" className="nav-link">
-              <span id="headrdr">My Profile</span>{" "}
+              <span id="headrdr">Şahsy otag</span>{" "}
             </NavLink>
             <ul className="ddlist">
               <li>
                 <NavLink to="/profile" excat className="nav-link">
-                  User Profile
+                  Profil
                 </NavLink>
               </li>
               <li>
                 <NavLink to="/logout" excat className="nav-link">
-                  Logout
+                  Çykmak
                 </NavLink>
               </li>
             </ul>
@@ -152,23 +145,23 @@ const Navbar = () => {
               aria-current="page"
               to="/home"
             >
-              Home
+              Baş sahypa
             </NavLink>
           </li>
 
           <li className="dropdown nav-item px-3 mx-auto licls">
             <NavLink to="#" className="nav-link">
-              <span id="headrdr">Lots</span>{" "}
+              <span id="headrdr">Harytlar</span>{" "}
             </NavLink>
             <ul className="ddlist">
               <li>
                 <NavLink to="/addlot" excat className="nav-link">
-                  Add Lot
+                  Haryt goşmak
                 </NavLink>
               </li>
               <li>
                 <NavLink to="/updatelot" excat className="nav-link">
-                  My Lots
+                  Meniň harytlarym
                 </NavLink>
               </li>
             </ul>
@@ -181,7 +174,7 @@ const Navbar = () => {
               className="nav-link"
               to="/lot"
             >
-              Bid & Buy
+              Teklip etmek
             </NavLink>
           </li>
 
@@ -192,7 +185,7 @@ const Navbar = () => {
               className="nav-link"
               to="/about"
             >
-              About
+              Programma barada
             </NavLink>
           </li>
 
@@ -203,7 +196,7 @@ const Navbar = () => {
               className="nav-link"
               to="/service"
             >
-              Services
+              Hyzmatlar
             </NavLink>
           </li>
 
@@ -214,14 +207,14 @@ const Navbar = () => {
               className="nav-link"
               to="/contact"
             >
-              Contact Us
+              Habarlaşmak
             </NavLink>
           </li>
 
           <li className="nav-item px-5 mx-auto ">
             <div className="signupbtn">
               <NavLink to="/signup" className="btn-get-started" id="bt1">
-                Sign Up
+                Ulgama girmek
               </NavLink>
             </div>
           </li>
@@ -234,12 +227,12 @@ const Navbar = () => {
     <>
       <div className="container-fluid nav_bg navbarpg">
         <div className="row">
-          <div className="col-10 mx-auto">
+          <div className="col-13 mx-auto">
             <nav className="navbar navbar-expand-lg navbar-light bg-light">
               <div className="container-fluid">
-                <NavLink className="navbar-logo" to="/">
+                <NavLink className="navbar-logo" to="/home">
                   <RiAuctionFill />
-                  BestBid
+                  Auksiýa
                 </NavLink>
 
                 <button
@@ -258,16 +251,7 @@ const Navbar = () => {
                   className="collapse navbar-collapse"
                   id="navbarSupportedContent"
                 >
-                  <ul className="navbar-nav ms-auto mb-2 mb-lg-0 ">
-                    {/* Home */}
-                    {/* // Home - Done
-// Add Lot
-// Lot
-// About - Done 
-// services - Done
-// Contact Us - Done */}
-                    {/* SignUp */}
-
+                  <ul className="navbar-nav ms-auto mb-2 mb-lg-0 custom-navbar">
                     <RenderMenu />
                   </ul>
                 </div>
