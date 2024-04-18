@@ -56,7 +56,7 @@ const Routing = () => {
   return (
     <Switch>
       <Route exact path="/home" component={Home} />
-      <Route exact path="/base" component={BaseUrl} />
+      <Route exact path="/" component={BaseUrl} />
       <Route exact path="/addlot" component={Addlot} />
       <Route exact path="/updatelot" component={UpdateLot} />
       <Route exact path="/updateauction/:id" component={UpdateComponent} />
