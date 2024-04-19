@@ -33,22 +33,27 @@ const Navbar = () => {
             </NavLink>
           </li>
 
-          <li className="dropdown nav-item px-3 mx-auto licls">
-            <NavLink to="#" className="nav-link">
-              <span id="headrdr">Harytlar</span>{" "}
+          <li className="nav-item px-3 mx-auto licls">
+            <NavLink
+              activeClassName="menu_active"
+              excat
+              className="nav-link"
+              aria-current="page"
+              to="/addlot"
+            >
+              Haryt döretmek
             </NavLink>
-            <ul className="ddlist">
-              <li>
-                <NavLink to="/addlot" excat className="nav-link">
-                  Haryt döretmek
-                </NavLink>
-              </li>
-              <li>
-                <NavLink to="/updatelot" excat className="nav-link">
-                  Meniň harytlarym
-                </NavLink>
-              </li>
-            </ul>
+          </li>
+          <li className="nav-item px-3 mx-auto licls">
+            <NavLink
+              activeClassName="menu_active"
+              excat
+              className="nav-link"
+              aria-current="page"
+              to="/updatelot"
+            >
+              Meniň harytlarym
+            </NavLink>
           </li>
 
           <li className="nav-item px-3 mx-auto licls">
@@ -88,7 +93,7 @@ const Navbar = () => {
             </NavLink>
           </li>
 
-          <li className="nav-item px-3 mx-auto licls">
+          {/* <li className="nav-item px-3 mx-auto licls">
             <NavLink
               activeClassName="menu_active"
               excat
@@ -97,7 +102,7 @@ const Navbar = () => {
             >
               Habarlaşmak
             </NavLink>
-          </li>
+          </li> */}
 
           {/* <li className="dropdown nav-item px-3 mx-auto licls"><NavLink to="#" className="nav-link"><span id='headrdr'>Connect Us</span> </NavLink>
             <ul className='ddlist'>
@@ -157,23 +162,27 @@ const Navbar = () => {
               Baş sahypa
             </NavLink>
           </li>
-
-          <li className="dropdown nav-item px-3 mx-auto licls">
-            <NavLink to="#" className="nav-link">
-              <span id="headrdr">Harytlar</span>{" "}
+          <li className="nav-item px-3 mx-auto licls">
+            <NavLink
+              activeClassName="menu_active"
+              excat
+              className="nav-link active"
+              aria-current="page"
+              to="/addlot"
+            >
+              Haryt döretmek
             </NavLink>
-            <ul className="ddlist">
-              <li>
-                <NavLink to="/addlot" excat className="nav-link">
-                  Haryt goşmak
-                </NavLink>
-              </li>
-              <li>
-                <NavLink to="/updatelot" excat className="nav-link">
-                  Meniň harytlarym
-                </NavLink>
-              </li>
-            </ul>
+          </li>
+          <li className="nav-item px-3 mx-auto licls">
+            <NavLink
+              activeClassName="menu_active"
+              excat
+              className="nav-link active"
+              aria-current="page"
+              to="/updatelot"
+            >
+              Meniň harytlarym
+            </NavLink>
           </li>
 
           <li className="nav-item px-3 mx-auto licls">
@@ -209,7 +218,7 @@ const Navbar = () => {
             </NavLink>
           </li>
 
-          <li className="nav-item px-3 mx-auto licls">
+          {/* <li className="nav-item px-3 mx-auto licls">
             <NavLink
               activeClassName="menu_active"
               excat
@@ -218,7 +227,7 @@ const Navbar = () => {
             >
               Habarlaşmak
             </NavLink>
-          </li>
+          </li> */}
 
           <li className="nav-item px-5 mx-auto ">
             <div className="signupbtn">

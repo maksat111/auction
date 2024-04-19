@@ -67,17 +67,19 @@ const Profile = () => {
 
     // console.log(`name is ${name}`);
 
-    const res = await fetch("/me/update", {
-      method: "PUT",
-      headers: {
-        "Content-type": "application/json",
-      },
-      body: JSON.stringify({
+    const res = await axiosInstance.put(
+      "/me/update",
+      {
         name,
         email,
         phone,
-      }),
-    });
+      },
+      {
+        headers: {
+          "Content-type": "application/json",
+        },
+      }
+    );
 
     // console.log(data);
     if (res.status === 400) {
@@ -134,7 +136,7 @@ const Profile = () => {
 
       <div className=" profilecls" data-aos="fade-up" data-aos-delay="400">
         <div className="row">
-          <div className="col-10 mx-auto">
+          <div className="col-12 mx-auto">
             <section className="section profile">
               <div className="row cardfix card">
                 <div className="col-xl-4  ">
@@ -146,7 +148,7 @@ const Profile = () => {
                         className="rounded-circle"
                       />
                       <h2>{userData.name}</h2>
-                      <h3>User</h3>
+                      <h3>Ulanyjy</h3>
                     </div>
                   </div>
                 </div>
@@ -161,19 +163,19 @@ const Profile = () => {
                             data-bs-toggle="tab"
                             data-bs-target="#profile-overview"
                           >
-                            Overview
+                            Gysgaça syn
                           </button>
                         </li>
 
-                        <li className="nav-item">
+                        {/* <li className="nav-item">
                           <button
                             className="nav-link"
                             data-bs-toggle="tab"
                             data-bs-target="#profile-edit"
                           >
-                            Edit Profile
+                            Profili redaktirläň
                           </button>
-                        </li>
+                        </li> */}
 
                         <li className="nav-item">
                           <button
@@ -181,7 +183,7 @@ const Profile = () => {
                             data-bs-toggle="tab"
                             data-bs-target="#profile-change-password"
                           >
-                            Change Password
+                            Paroly üýtgetmek
                           </button>
                         </li>
                       </ul>
@@ -190,11 +192,11 @@ const Profile = () => {
                           className="tab-pane fade show active profile-overview"
                           id="profile-overview"
                         >
-                          <h5 className="card-title">Profile Details</h5>
+                          <h5 className="card-title">Profil maglumatlary</h5>
 
                           <div className="row">
                             <div className="col-lg-3 col-md-4 label ">
-                              Full Name
+                              Doly ady
                             </div>
                             <div className="col-lg-9 col-md-8">
                               {userData.name}
@@ -202,19 +204,25 @@ const Profile = () => {
                           </div>
 
                           <div className="row">
-                            <div className="col-lg-3 col-md-4 label">Job</div>
-                            <div className="col-lg-9 col-md-8">User</div>
+                            <div className="col-lg-3 col-md-4 label">
+                              Status
+                            </div>
+                            <div className="col-lg-9 col-md-8">Ulanyjy</div>
                           </div>
 
                           <div className="row">
-                            <div className="col-lg-3 col-md-4 label">Phone</div>
+                            <div className="col-lg-3 col-md-4 label">
+                              Telefon
+                            </div>
                             <div className="col-lg-9 col-md-8">
                               {userData.phone}
                             </div>
                           </div>
 
                           <div className="row">
-                            <div className="col-lg-3 col-md-4 label">Email</div>
+                            <div className="col-lg-3 col-md-4 label">
+                              E-poçta
+                            </div>
                             <div className="col-lg-9 col-md-8">
                               {userData.email}
                             </div>
@@ -230,7 +238,7 @@ const Profile = () => {
                               for="profileImage"
                               className="col-md-4 col-lg-3 col-form-label"
                             >
-                              Profile Image
+                              Profil suraty
                             </label>
                             <div className="col-md-8 col-lg-9">
                               <img src={ProfileImg} alt="Profile" />
