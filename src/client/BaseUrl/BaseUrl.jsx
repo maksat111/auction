@@ -14,7 +14,7 @@ const BaseUrl = () => {
   };
 
   const handleSkipClick = () => {
-    localStorage.setItem("url", value);
+    window.location.href = "/home";
   };
 
   return (
