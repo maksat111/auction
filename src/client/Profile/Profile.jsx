@@ -6,7 +6,7 @@ import ProfileImg from "../images/profile-icon-png-899.png";
 import { AiOutlineUpload, AiFillDelete } from "react-icons/ai";
 import { BsCloudUploadFill } from "react-icons/bs";
 import MetaData from "../MetaData/MetaData";
-import { BASE_URL } from "../../config/axios";
+import { BASE_URL, axiosInstance } from "../../config/axios";
 
 const Profile = () => {
   // HERE USE HISTORY -> AT MIDDLEWARE PAGE -> IF NOT LOGIN -> REDIRECT TO LOGIN PAGE
@@ -25,15 +25,13 @@ const Profile = () => {
 
   const callProfilePage = async () => {
     try {
-      const res = await fetch(`${BASE_URL}/about`, {
-        method: "GET",
+      const res = await axiosInstance.get(`/about`, {
         headers: {
           Accept: "application/json",
           "Content-Type": "application/json",
         },
-        credentials: "include",
       });
-      const data = await res.json();
+      const data = await res.data;
       console.log(data);
       setUserData(data);
       setName(data.name);
@@ -104,17 +102,19 @@ const Profile = () => {
 
     // console.log(`name is ${name}`);
 
-    const res = await fetch("/password/update", {
-      method: "PUT",
-      headers: {
-        "Content-type": "application/json",
-      },
-      body: JSON.stringify({
+    const res = await axiosInstance.put(
+      "/password/update",
+      {
         oldPassword,
         newPassword,
         confirmPassword,
-      }),
-    });
+      },
+      {
+        headers: {
+          "Content-type": "application/json",
+        },
+      }
+    );
 
     // console.log(data);
     if (res.status === 400) {

@@ -24,11 +24,7 @@ const Footer = () => {
   const history = useHistory();
   const userContact = async () => {
     try {
-      const res = await axiosInstance.get("/getdata", {
-        headers: {
-          "Content-Type": "application/json",
-        },
-      });
+      const res = await axiosInstance.get("/getdata");
       const data = res.data;
       // console.log(data);
       setUserData({ ...userData, name: data.name, email: data.email });

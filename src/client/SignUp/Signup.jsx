@@ -108,9 +108,9 @@ const Signup = () => {
     } else {
       dispatch({ type: "USER", payload: true });
       // window.alert("login Successful");
-      alert.success("login Successful");
-
-      history.push("/home");
+      alert.success("Üstünlikli!");
+      localStorage.setItem("token", res.data.token);
+      window.location.href = "/home";
     }
   };
 

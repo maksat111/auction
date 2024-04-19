@@ -355,7 +355,7 @@ const ProductDetails = ({ match }) => {
                   <div className="col-lg-5 offset-lg-1">
                     <div className="s_product_text">
                       <h3>{product.itemName}</h3>
-                      <h2>{`₹ ${product.startingBid}`}</h2>
+                      <h2>{`${product.startingBid}TMT`}</h2>
                       <ul className="list">
                         <li>
                           <a className="active" href="#">
@@ -736,10 +736,10 @@ MdOutlinePayment/> <span>Connect with Stripe </span></button>
                         <table className="table table-hover">
                           <thead>
                             <tr>
-                              <th scope="col">Bidder Name</th>
-                              <th scope="col">Bidder Email</th>
-                              <th scope="col">Bid Ammount</th>
-                              <th scope="col">Bid Status</th>
+                              <th scope="col">Alyjynyň ady</th>
+                              <th scope="col">Alyjynyň e-poçtasy</th>
+                              <th scope="col">Mukdary</th>
+                              <th scope="col">Statusy</th>
                             </tr>
                           </thead>
                           <tbody>

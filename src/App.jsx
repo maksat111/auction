@@ -36,11 +36,11 @@ import "../node_modules/font-awesome/css/font-awesome.min.css";
 import "../node_modules/font-awesome/css/font-awesome.min.css";
 import "@fortawesome/fontawesome-free/css/all.min.css";
 
-import AOS from "aos";
-import "aos/dist/aos.css";
+// import AOS from "aos";
+// import "aos/dist/aos.css";
 import ScrollToTop from "./ScrollToTop";
 import BaseUrl from "./client/BaseUrl/BaseUrl";
-AOS.init();
+// AOS.init();
 
 // Last Remain at NaVBAR
 // Home - Done

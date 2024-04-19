@@ -4,13 +4,7 @@ var flag = true;
 
 const callProfilePage = async () => {
   try {
-    const res = await axiosInstance.get(`/about`, {
-      headers: {
-        Accept: "application/json",
-        "Content-Type": "application/json",
-      },
-      credentials: "include",
-    });
+    const res = await axiosInstance.get(`/about`);
 
     if (!res.status === 200) {
       const error = new Error(res.error);

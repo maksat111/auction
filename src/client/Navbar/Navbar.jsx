@@ -121,23 +121,25 @@ const Navbar = () => {
               Tekliplerim
             </NavLink>
           </li>
-
-          <li className="dropdown nav-item px-3 mx-auto licls">
-            <NavLink to="#" className="nav-link">
-              <span id="headrdr">Şahsy otag</span>{" "}
+          <li className="nav-item px-3 mx-auto licls">
+            <NavLink
+              activeClassName="menu_active"
+              excat
+              className="nav-link"
+              to="/profile"
+            >
+              Profilim
             </NavLink>
-            <ul className="ddlist">
-              <li>
-                <NavLink to="/profile" excat className="nav-link">
-                  Profil
-                </NavLink>
-              </li>
-              <li>
-                <NavLink to="/logout" excat className="nav-link">
-                  Çykmak
-                </NavLink>
-              </li>
-            </ul>
+          </li>
+          <li className="nav-item px-3 mx-auto licls">
+            <NavLink
+              activeClassName="menu_active"
+              excat
+              className="nav-link"
+              to="/logout"
+            >
+              Çykmak
+            </NavLink>
           </li>
         </>
       );
