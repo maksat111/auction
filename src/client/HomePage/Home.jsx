@@ -81,7 +81,7 @@ const Home = () => {
                     <div
                       className="col-lg-6 order-1 order-lg-2 header-img"
                       data-aos="fade-up"
-                      data-aos-delay="400"
+                      data-aos-delay="100"
                     >
                       <img
                         src={Auction1}
@@ -114,7 +114,7 @@ const Home = () => {
                       <div
                         className="col-md-4"
                         data-aos="fade-up"
-                        data-aos-delay="300"
+                        data-aos-delay="100"
                       >
                         <div className="feature-1 text-center">
                           <div className="wrap-icon icon-1">
@@ -135,7 +135,7 @@ const Home = () => {
                       <div
                         className="col-md-4"
                         data-aos="fade-up"
-                        data-aos-delay="400"
+                        data-aos-delay="100"
                       >
                         <div className="feature-1 text-center mt-4">
                           <div className="wrap-icon icon-1">
@@ -156,7 +156,7 @@ const Home = () => {
                       <div
                         className="col-md-4"
                         data-aos="fade-up"
-                        data-aos-delay="500"
+                        data-aos-delay="100"
                       >
                         <div className="feature-1 text-center mt-4">
                           <div className="wrap-icon icon-1">
@@ -193,7 +193,7 @@ const Home = () => {
                     <div
                       className="row justify-content-center text-center mb-2 homeimgcls mt-4"
                       data-aos="zoom-in"
-                      data-aos-delay="200"
+                      data-aos-delay="100"
                     >
                       <div className="col-md-6 mb-5 flwpthcls">
                         <img
@@ -208,7 +208,7 @@ const Home = () => {
                     </div>
 
                     {/* 
-        <div className="row justify-content-center text-center mb-5 homeimgcls" data-aos="zoom-in" data-aos-delay="200">
+        <div className="row justify-content-center text-center mb-5 homeimgcls" data-aos="zoom-in" data-aos-delay="100">
           
           <div className="col-md-6 mb-5">
             <img src={Img} alt="Auction Image" className="img-fluid"/>
@@ -220,7 +220,7 @@ const Home = () => {
                         <div
                           className="step"
                           data-aos="fade-up"
-                          data-aos-delay="300"
+                          data-aos-delay="100"
                         >
                           <span className="number">01</span>
                           <h3>Ulanyjy dörediň</h3>
@@ -234,7 +234,7 @@ const Home = () => {
                         <div
                           className="step"
                           data-aos="fade-up"
-                          data-aos-delay="400"
+                          data-aos-delay="100"
                         >
                           <span className="number">02</span>
                           <h3>Ulgama giriň</h3>
@@ -247,7 +247,7 @@ const Home = () => {
                         <div
                           className="step"
                           data-aos="fade-up"
-                          data-aos-delay="500"
+                          data-aos-delay="100"
                         >
                           <span className="number">03</span>
                           <h3>Enjoy the app</h3>
@@ -266,7 +266,7 @@ const Home = () => {
                       <div
                         className="col-md-4 me-auto"
                         data-aos="fade-up"
-                        data-aos-delay="400"
+                        data-aos-delay="100"
                       >
                         <h2 className="mb-4">Haryt dörediň</h2>
                         <p className="mb-4">
@@ -285,7 +285,7 @@ const Home = () => {
                       <div
                         className="col-md-6"
                         data-aos="zoom-in"
-                        data-aos-delay="500"
+                        data-aos-delay="100"
                       >
                         <img
                           src={Img}
@@ -303,7 +303,7 @@ const Home = () => {
                       <div
                         className="col-md-4 ms-auto order-2"
                         data-aos="fade-up"
-                        data-aos-delay="400"
+                        data-aos-delay="100"
                       >
                         <h2 className="mb-4">Baha teklip ediň</h2>
                         <p className="mb-4">
@@ -321,7 +321,7 @@ const Home = () => {
                     <div
                       className="col-md-6"
                       data-aos="zoom-in"
-                      data-aos-delay="500"
+                      data-aos-delay="100"
                     >
                       <img
                         src={BidImg}
