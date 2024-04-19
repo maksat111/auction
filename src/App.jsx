@@ -38,6 +38,7 @@ import "@fortawesome/fontawesome-free/css/all.min.css";
 
 import AOS from "aos";
 import "aos/dist/aos.css";
+import ScrollToTop from "./ScrollToTop";
 import BaseUrl from "./client/BaseUrl/BaseUrl";
 AOS.init();
 

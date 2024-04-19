@@ -1,7 +1,5 @@
-
-
-  // FREATURED PRODUCT 
-  .slider_section .carousel_btn_box .carousel-control-prev img,
+// FREATURED PRODUCT
+.slider_section .carousel_btn_box .carousel-control-prev img,
 .slider_section .carousel_btn_box .carousel-control-next img {
   width: 10px;
 }
@@ -11,14 +9,13 @@
   background-color: #4481eb;
 }
 
-.product_section{
+.product_section {
   margin-top: 10em;
   margin-bottom: 10em;
 }
 
 .product_section .heading_container {
   margin-bottom: 25px;
-
 }
 
 .product_section .box {
@@ -27,11 +24,11 @@
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   padding: 15px;
   margin-top: 15px;
   position: relative;
@@ -46,11 +43,11 @@
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   position: relative;
   padding: 15px;
 }
@@ -72,9 +69,9 @@
   bottom: 50%;
   left: 50%;
   -webkit-transform: translate(-50%, 50%);
-          transform: translate(-50%, 50%);
-  -webkit-transition: all .3s;
-  transition: all .3s;
+  transform: translate(-50%, 50%);
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
   opacity: 0;
   z-index: 3;
   text-decoration: none;
@@ -96,8 +93,8 @@
   background-color: #ffffff;
   z-index: 1;
   opacity: 0;
-  -webkit-transition: all .2s;
-  transition: all .2s;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
 }
 
 .product_section .box .detail-box {
@@ -107,8 +104,8 @@
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   width: 100%;
 }
 
@@ -117,8 +114,8 @@
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
 }
 
 .product_section .box .star_container {
@@ -131,7 +128,7 @@
 }
 
 .product_section .box:hover .img-box::before {
-  opacity: .55;
+  opacity: 0.55;
 }
 
 .product_section .btn_box {
@@ -139,8 +136,8 @@
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   margin-top: 45px;
 }
 
@@ -151,8 +148,8 @@
   color: #ffffff;
   border-radius: 5px;
   border: 1px solid #4481eb;
-  -webkit-transition: all .3s;
-  transition: all .3s;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
   text-decoration: none;
 }
 
@@ -161,27 +158,23 @@
   color: #4481eb;
 }
 
-
-
-
-
 // HEADING CSS
 
 //   About Heading
-
 
 .product_section .section-title {
   text-align: center;
   padding-bottom: 30px;
 }
 .product_section .section-title h2 {
-  font-size: 32px;
+  font-size: 25px !important;
   font-weight: bold;
   text-transform: uppercase;
   position: relative;
   color: #222222;
 }
-.product_section .section-title h2::before, .section-title h2::after {
+.product_section .section-title h2::before,
+.section-title h2::after {
   content: "";
   width: 50px;
   height: 2px;
@@ -198,11 +191,9 @@
   margin: 15px 0 0 0;
 }
 
-
-
 // DELETE UPDATE BTN CSS
 
-.dltupdbtn{
+.dltupdbtn {
   display: flex;
   justify-content: space-around;
   flex-direction: row;
@@ -210,6 +201,6 @@
   margin-top: 5px;
   margin-bottom: 5px;
 }
-.dltupdbtn .btn{
+.dltupdbtn .btn {
   font-size: 25px;
 }

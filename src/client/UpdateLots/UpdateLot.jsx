@@ -1,89 +1,71 @@
-import React, { useEffect } from 'react';
-import { NavLink } from 'react-router-dom';
-import MetaData from '../MetaData/MetaData';
+import React, { useEffect } from "react";
+import { NavLink } from "react-router-dom";
+import MetaData from "../MetaData/MetaData";
 import Product from "../HomePage/Product";
-import { getSellerProducts } from '../../actions/productAction';
-import {useSelector , useDispatch} from "react-redux";
-import Loader from '../Loader/Loader';
-import { useAlert } from 'react-alert';
-import SellerProduct from './SellerProduct';
+import { getSellerProducts } from "../../actions/productAction";
+import { useSelector, useDispatch } from "react-redux";
+import Loader from "../Loader/Loader";
+import { useAlert } from "react-alert";
+import SellerProduct from "./SellerProduct";
 import "./updateLotstyle.scss";
 import "../HomePage/homestyle.scss";
 
 const UpdateLot = () => {
-
-
   const alert = useAlert();
   const dispatch = useDispatch();
-  const {sellerproducts , loading , error } = useSelector(
-(state) => state.sellerproducts
+  const { sellerproducts, loading, error } = useSelector(
+    (state) => state.sellerproducts
   );
 
-
-  
   useEffect(() => {
-  
-
-    if(error){
+    if (error) {
       return alert.error(error);
     }
-  dispatch(getSellerProducts());
-    
-  }, [dispatch , error , alert]);
-
+    dispatch(getSellerProducts());
+  }, [dispatch, error, alert]);
 
   return (
-    <>{loading ? (<Loader/>) :( 
-
-  
-  <>
-
-<div className=" updatelotcls" data-aos="fade-up" data-aos-delay="400">
-        <div className='row'>
-          <div className='col-10 mx-auto'>
-
-          
-
-
-          <section className="product_section layout_padding">
-    <div className="container">
-      <div className="heading_container heading_center">
-      <div className="section-title" data-aos="fade-up">
-          <h2>My Auctions</h2>
-          <p>Auctions Created By you</p>
-        </div>
-
-      </div>
-      <div className="row">
-{/* 
+    <>
+      {loading ? (
+        <Loader />
+      ) : (
+        <>
+          <div
+            className=" updatelotcls"
+            data-aos="fade-up"
+            data-aos-delay="100"
+          >
+            <div className="row">
+              <div className="col-11 mx-auto">
+                <section className="product_section layout_padding">
+                  <div className="container">
+                    <div className="heading_container heading_center">
+                      <div className="section-title" data-aos="fade-up">
+                        <h2>Harytlarym</h2>
+                        <p>Siz tarapyndan döredilen harytlar</p>
+                      </div>
+                    </div>
+                    <div className="row">
+                      {/* 
 {sellerproducts && sellerproducts.map(product => (
   <Product product = {product} />
 ))}
  */}
 
-
-
- {sellerproducts && sellerproducts.map(product => (
-  <SellerProduct product = {product} />
-))}
-
-
-
-        
-        
-      </div>
-      
-    </div>
-  </section>
-
+                      {sellerproducts &&
+                        sellerproducts.map((product) => (
+                          <SellerProduct product={product} />
+                        ))}
+                    </div>
+                  </div>
+                </section>
+              </div>
+            </div>
           </div>
-          </div>
-          </div>
-  </>
-  
-  )}</>
+        </>
+      )}
+    </>
   );
-
 };
 
 export default UpdateLot;

@@ -1,11 +1,18 @@
-import React, { useContext } from "react";
-import { NavLink } from "react-router-dom";
+import React, { useContext, useEffect } from "react";
+import { NavLink, useLocation } from "react-router-dom";
 import "./navbarstyle.scss";
 import { RiAuctionFill } from "react-icons/ri";
 import { UserContext } from "../../App";
 
 const Navbar = () => {
   const { state, dispatch } = useContext(UserContext);
+
+  const { pathname } = useLocation();
+
+  // Automatically scrolls to top whenever pathname changes
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [pathname]);
 
   const RenderMenu = () => {
     console.log(`state is ${state}`);
