@@ -63,7 +63,7 @@ const Home = () => {
                           Onlaýn auksion
                           <br />
                         </strong>
-                        bilen zatlary teklip ediň we satyň{" "}
+                        bilen harytlary teklip ediň we satyň
                       </h1>
 
                       <h2 className="my-3">
@@ -79,7 +79,7 @@ const Home = () => {
                     </div>
 
                     <div
-                      className="col-lg-6 order-1 order-lg-2 header-img "
+                      className="col-lg-6 order-1 order-lg-2 header-img"
                       data-aos="fade-up"
                       data-aos-delay="400"
                     >
