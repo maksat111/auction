@@ -29,6 +29,7 @@ import "swiper/css/autoplay";
 import "swiper/css/thumbs";
 import "swiper/css/a11y";
 import "font-awesome/css/font-awesome.min.css";
+import { axiosInstance } from "../../config/axios";
 
 // Swiper Tesing
 SwiperCore.use([Navigation, Pagination, Thumbs, Autoplay]);
@@ -60,13 +61,8 @@ const ProductDetails = ({ match }) => {
 
   const userContact = async () => {
     try {
-      const res = await fetch("/getdata", {
-        method: "GET",
-        headers: {
-          "Content-Type": "application/json",
-        },
-      });
-      const data = await res.json();
+      const res = await axiosInstance.get("/getdata");
+      const data = data.data;
       console.log(`id is ${data._id}`);
       // console.log(`data send to backend`);
       setUserData({ _id: data._id });
@@ -436,7 +432,7 @@ MdOutlinePayment/> <span>Connect with Stripe </span></button>
 
             <div className="product_info">
               <div className="row">
-                <div className="col-10 mx-auto">
+                <div className="col-12 mx-auto">
                   <div className="section-title" data-aos="fade-up">
                     <h2>Goşmaça maglumat</h2>
                     <p>Haryt satyjysy we beýleki goşmaça maglumatlar</p>
@@ -585,7 +581,7 @@ MdOutlinePayment/> <span>Connect with Stripe </span></button>
 
                               <div className="row">
                                 <div className="col-lg-3 col-md-4 label">
-                                  Initial Price
+                                  Başlangyç baha
                                 </div>
                                 <div className="col-lg-9 col-md-8">
                                   {product.startingBid}

@@ -24,6 +24,8 @@ import {
 } from "../constants/productConstants";
 import { axiosInstance } from "../config/axios";
 
+const token = localStorage.getItem("token");
+
 export const getProduct =
   (keyword = "", currentPage = 1, price = [0, 2500000], category) =>
   async (dispatch) => {
@@ -78,17 +80,14 @@ export const createProduct = (productData) => async (dispatch) => {
 
     const config = {
       headers: { "Content-Type": "application/json" },
+      "x-access-token": `${token}`,
     };
 
-    const { data } = await axiosInstance.post(
-      `/product/new`,
-      productData,
-      config
-    );
+    const data = await axiosInstance.post(`/product/new`, productData, config);
 
     dispatch({
       type: NEW_PRODUCT_SUCCESS,
-      payload: data,
+      payload: data.data,
     });
   } catch (error) {
     dispatch({
@@ -152,11 +151,11 @@ export const getBiddedProducts = () => async (dispatch) => {
   try {
     dispatch({ type: BIDDED_PRODUCT_REQUEST });
 
-    const { data } = await axiosInstance.get(`/products/bidstatus`);
+    const data = await axiosInstance.get(`/products/bidstatus`);
 
     dispatch({
       type: BIDDED_PRODUCT_SUCCESS,
-      payload: data,
+      payload: data.data,
     });
   } catch (error) {
     dispatch({
@@ -172,11 +171,11 @@ export const getSellerProducts = () => async (dispatch) => {
   try {
     dispatch({ type: SELLER_PRODUCT_REQUEST });
 
-    const { data } = await axiosInstance.get(`/products/myproducts`);
+    const data = await axiosInstance.get(`/products/myproducts`);
 
     dispatch({
       type: SELLER_PRODUCT_SUCCESS,
-      payload: data,
+      payload: data.data,
     });
   } catch (error) {
     dispatch({

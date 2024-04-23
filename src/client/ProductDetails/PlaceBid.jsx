@@ -3,6 +3,7 @@ import axios from "axios";
 import { useAlert } from "react-alert";
 
 import { useHistory } from "react-router-dom";
+import { axiosInstance } from "../../config/axios";
 
 const PlaceBid = ({ product }) => {
   const [ammount, setAmmount] = useState("");
@@ -20,12 +21,10 @@ const PlaceBid = ({ product }) => {
       myForm.set("bidAmmount", ammount);
 
       console.log(myForm);
-      axios({
-        method: "post",
-        url: "/products/bid",
-        data: myForm,
-        headers: { "Content-Type": "application/json" },
-      })
+      axiosInstance
+        .post("/products/bid", myForm, {
+          headers: { "Content-Type": "application/json" },
+        })
         .then(function (response) {
           //handle success
           console.log(response);
@@ -34,7 +33,7 @@ const PlaceBid = ({ product }) => {
             e.preventDefault();
 
             setAmmount("");
-            alert.success("Bid Placed Successfully");
+            alert.success("Üstünlikli teklip berildi!");
           }
         })
         .catch(function (response) {
@@ -44,7 +43,7 @@ const PlaceBid = ({ product }) => {
     } else {
       console.log(`ammount is invalid`);
       //   history.push("/lot");
-      alert.error(`Bid must be greater than initial `);
+      alert.error(`Teklip başlangyç bahadan ýokary bolmaly!`);
     }
   };
 

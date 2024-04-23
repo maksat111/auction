@@ -4,7 +4,7 @@ import axios from "axios";
 
 const BASE_URL = "http://" + localStorage.getItem("url") + ":5000";
 const token = localStorage.getItem("token");
-console.log("token");
+console.log(token);
 
 const axiosInstance = axios.create({
   baseURL: BASE_URL,
