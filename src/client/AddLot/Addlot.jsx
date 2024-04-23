@@ -166,21 +166,21 @@ const Addlot = () => {
                     <option value="Household">Household</option>
                     <option value="Vehicle">Vehicle</option> */}
 
-                                <option value="Art">Sungat</option>
-                                <option value="Property">Emläk</option>
-                                <option value="Jewelry">Şaý-sepler</option>
-                                <option value="Vehicles">Ulaglar</option>
-                                <option value="Sports equipment">
+                                <option value="Sungat">Sungat</option>
+                                <option value="Emläk">Emläk</option>
+                                <option value="Şaý-sepler">Şaý-sepler</option>
+                                <option value="Ulaglar">Ulaglar</option>
+                                <option value="Sport enjamlary">
                                   Sport enjamlary
                                 </option>
-                                <option value="Industrial equipment">
+                                <option value="Senagat enjamlary">
                                   Senagat enjamlary
                                 </option>
-                                <option value="Machinery">Machinery</option>
-                                <option value="Rare&Old Heritage">
+                                {/* <option value="Machinery">Machinery</option> */}
+                                <option value="Seýrek we gadymy miras">
                                   Seýrek we gadymy miras
                                 </option>
-                                <option value="Other">Başga</option>
+                                <option value="Başga">Başga</option>
                               </select>
                             </div>
                           </div>
