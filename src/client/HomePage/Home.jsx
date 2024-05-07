@@ -222,7 +222,7 @@ const Home = () => {
                       <div className="col-md-4 mt-4">
                         <div className="step" a="fade-up" a-delay="100">
                           <span className="number">03</span>
-                          <h3>Enjoy the app</h3>
+                          <h3>Lezzet alyň</h3>
                           <p>
                             Programmadan lezzet alyň. Auksion ulgamda söwda ediň
                           </p>
