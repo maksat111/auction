@@ -86,20 +86,20 @@ const Addlot = () => {
 
       <div className=" addlotcls" data-aos="fade-up" data-aos-delay="400">
         <div className="row">
-          <div className="col-11 mx-auto">
+          <div className="col-12 mx-auto">
             <section className="section form-elements">
               <div className="row">
                 <div className="card">
                   <div className="card-body">
                     <div className="section-title" data-aos="fade-up">
                       <h2>Haryt goşmak</h2>
-                      <p>Maglumatlary dolduryň</p>
+                      <p>Harytlaryň maglumatlaryny giriziň</p>
                     </div>
 
                     {/* <h5 className="card-title">ADD LOT</h5> */}
 
                     <div className="row">
-                      <div className="col-18 mx-auto">
+                      <div className="col-11 mx-auto">
                         <form
                           className="formbd"
                           encType="multipart/form-data"
@@ -147,7 +147,7 @@ const Addlot = () => {
                           {/* CATEGORY */}
                           <div className="row mb-3 rowset">
                             <label className="col-sm-2 col-form-label">
-                              Kategoriýasy
+                              Kategoriýa
                             </label>
                             <div className="col-sm-10">
                               <select
@@ -160,27 +160,23 @@ const Addlot = () => {
                                   Kategoriýa saýlaň
                                 </option>
 
-                                {/* <option value="Clothes">Clothes</option>
-                    <option value="Electronics">Electronics</option>
-                    <option value="Property">Property</option>
-                    <option value="Household">Household</option>
-                    <option value="Vehicle">Vehicle</option> */}
+                                <option value="">Ählisi</option>
 
-                                <option value="Sungat">Sungat</option>
-                                <option value="Emläk">Emläk</option>
-                                <option value="Şaý-sepler">Şaý-sepler</option>
-                                <option value="Ulaglar">Ulaglar</option>
-                                <option value="Sport enjamlary">
+                                <option value="Art">Sungat</option>
+                                <option value="Property">Emläk</option>
+                                <option value="Jewelry">Şaý-sepler</option>
+                                <option value="Vehicles">Ulaglar</option>
+                                <option value="Sports equipment">
                                   Sport enjamlary
                                 </option>
-                                <option value="Senagat enjamlary">
+                                <option value="Industrial equipment">
                                   Senagat enjamlary
                                 </option>
-                                {/* <option value="Machinery">Machinery</option> */}
-                                <option value="Seýrek we gadymy miras">
+                                <option value="Machinery">Machinery</option>
+                                <option value="Rare&Old Heritage">
                                   Seýrek we gadymy miras
                                 </option>
-                                <option value="Başga">Başga</option>
+                                <option value="Other">Başga</option>
                               </select>
                             </div>
                           </div>
@@ -264,6 +260,18 @@ const Addlot = () => {
                             </div>
                           </div>
 
+                          {/* <div className="row mb-3 rowset">
+                            <div className="col-sm-10 createProductFormImage">
+                              {imagesPreview.map((image, index) => (
+                                <img
+                                  key={index}
+                                  src={image}
+                                  alt="Product preview"
+                                />
+                              ))}
+                            </div>
+                          </div> */}
+
                           {/* PAYMENT METHOD */}
                           {/* <div className="row mb-3 rowset">
                   <legend className="col-form-label col-sm-2 pt-0">PAYMENT METHODS</legend>
@@ -343,7 +351,7 @@ const Addlot = () => {
                                 className="btn btn-primary"
                                 disabled={loading ? true : false}
                               >
-                                Döretmek
+                                Create
                               </button>
                             </div>
                           </div>
