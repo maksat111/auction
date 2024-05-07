@@ -351,7 +351,7 @@ const Addlot = () => {
                                 className="btn btn-primary"
                                 disabled={loading ? true : false}
                               >
-                                Create
+                                Döretmek
                               </button>
                             </div>
                           </div>
